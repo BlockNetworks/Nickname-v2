@@ -3,11 +3,17 @@
 namespace Nick;
 
 use pocketmine\plugin\PluginBase;
+
 use pocketmine\event\Listener;
+
 use pocketmine\Player;
+
 use pocketmine\utils\Config;
+
 use pocketmine\event\player\PlayerPreLoginEvent;
+
 use pocketmine\command\CommandSender;
+
 use pocketmine\command\Command;
 
 class Nick extends PluginBase implements Listener{
