@@ -10,7 +10,7 @@ use pocketmine\event\player\PlayerPreLoginEvent;
 use pocketmine\command\CommandSender;
 use pocketmine\command\Command;
 
-class Main extends PluginBase implements Listener{
+class Main.php extends PluginBase implements Listener{
 
 	public function onEnable(){
 		$this->getServer()->getPluginManager()->registerEvents($this, $this);
