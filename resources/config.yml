@@ -24,7 +24,7 @@ reset-admin-description: "Resets a player's nick"
 
 see-command: "see"
 see-usage: "<player nick> OR <player name>"
-see-description: "See the real name of a player or if a player setted a nick"
+see-description: "See the real name of a player or if a player has a nick set"
 
 # Messages
 # Here you can customize messages!
@@ -52,14 +52,14 @@ help-two-points-colour: "§f"
 help-description-colour: "§f"
 
 # Set
-set: "§aNick successfully setted!"
-set-by-admin: "§eAn admin setted a nick to you!"
+set: "§aNick successfully set"
+set-by-admin: "§eAn Admin set your Nickname!"
 
 # Reset
 reset: "§aNick successfully resetted!"
-reset-by-admin: "§eAn admin resetted your nick!"
+reset-by-admin: "§eAn Admin reset your nick!"
 
 # See
 see: "§a{player_nick}§e's real name is §a{player_name}"
-see-no-nick: "§eThat player hasn't a nick!"
+see-no-nick: "§eThat player has no nick!"
 ...
