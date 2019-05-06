@@ -1,6 +1,6 @@
 <?php
 
-namespace Nick;
+namespace Nick2;
 
 use pocketmine\plugin\PluginBase;
 
