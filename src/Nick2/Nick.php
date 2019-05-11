@@ -198,5 +198,6 @@ class Nick extends PluginBase implements Listener{
 
 			}
 		}
+	return true;
 	}
 }
