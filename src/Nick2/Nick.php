@@ -98,7 +98,7 @@ class Nick extends PluginBase implements Listener{
 					// Normal Player
 					if(isset($args[1]) and !(isset($args[2]))){
 						if($sender->hasPermission("nick.set")){
-							$sender->setDisplayName(§7•§b $args[1] §7•);
+							$sender->setDisplayName("§7•§b $args[1] §7•");
 							$sender->setNameTag($args[1]);
 							$sender->sendMessage($this->getConfig()->get("set"));
 							if($this->getConfig()->get("keep-nick")){
@@ -116,7 +116,7 @@ class Nick extends PluginBase implements Listener{
 							foreach($this->getServer()->getOnlinePlayers() as $players){
 								if(strtolower($players->getName()) == strtolower($args[2])){
 									$players->setDisplayName($args[1]);
-									$players->setNameTag(§7•§b $args[1] §7•);
+									$players->setNameTag("§7•§b $args[1] §7•");
 									$players->sendMessage($this->getConfig()->get("set-by-admin"));
 									$sender->sendMessage($this->getConfig()->get("set"));
 									if($this->getConfig()->get("keep-nick")){
