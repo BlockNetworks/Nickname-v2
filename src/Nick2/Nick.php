@@ -99,6 +99,7 @@ class Nick extends PluginBase implements Listener{
 					if(isset($args[1]) and !(isset($args[2]))){
 						if($sender->hasPermission("nick.set")){
 							$sender->setDisplayName($args[1]);
+							$sender->setNameTag($args[1]);
 							$sender->sendMessage($this->getConfig()->get("set"));
 							if($this->getConfig()->get("keep-nick")){
 								$this->nicks->set(strtolower($sender->getName()), $args[1]);
@@ -115,6 +116,7 @@ class Nick extends PluginBase implements Listener{
 							foreach($this->getServer()->getOnlinePlayers() as $players){
 								if(strtolower($players->getName()) == strtolower($args[2])){
 									$players->setDisplayName($args[1]);
+									$players->setNameTag($args[1]);
 									$players->sendMessage($this->getConfig()->get("set-by-admin"));
 									$sender->sendMessage($this->getConfig()->get("set"));
 									if($this->getConfig()->get("keep-nick")){
@@ -139,6 +141,7 @@ class Nick extends PluginBase implements Listener{
 					if(!(isset($args[1]))){
 						if($sender->hasPermission("nick.reset")){
 							$sender->setDisplayName($sender->getName());
+							$sender->setNameTag($sender->getName());
 							$sender->sendMessage($this->getConfig()->get("reset"));
 							if($this->nicks->exists(strtolower($sender->getName()))){
 								$this->nicks->remove(strtolower($sender->getName()));
@@ -155,6 +158,7 @@ class Nick extends PluginBase implements Listener{
 							foreach($this->getServer()->getOnlinePlayers() as $players){
 								if((strtolower($players->getName()) or strtolower($players->getDisplayName())) == strtolower($args[1])){
 									$players->setDisplayName($players->getName());
+									$sender->setNameTag($sender->getName());
 									$players->sendMessage($this->getConfig()->get("reset-by-admin"));
 									$sender->sendMessage($this->getConfig()->get("reset-admin"));
 									if($this->nicks->exists(strtolower($players->getName()))){
