@@ -8,6 +8,6 @@ Fork of @ElektroPrinz Nick2 Plugin
 </div>
 
 ### Whats Different
-• Added support for Nametags
-• Fixed namespace
-• Fixed typos in messages
+- Added support for Nametags
+- Fixed namespace
+- Fixed typos in messages
