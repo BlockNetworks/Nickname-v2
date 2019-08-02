@@ -1,6 +1,8 @@
 ---
 # Config file for Nick
 # Nick (c) 2016 AryToNeX
+# Edited by ElektroPrinz
+# Edited more and fixed up by Jes'kad Ad'aryc (LegoFan48737)
 
 # Keeps the nick after leave/login/server closed/thermonuclear war
 # Boolean parameter (true, false)
@@ -30,17 +32,17 @@ see-description: "See the real name of a player or if a player has a nick set"
 # Here you can customize messages!
 
 # No permission
-no-permission-help: "§cYou don't have the permission to use /nick help!"
-no-permission-set: "§cYou don't have the permission to set a nick!"
-no-permission-admin-set: "§cYou don't have the permission to set a nick to another player!"
-no-permission-reset: "§cYou don't have the permission to reset your nick!"
-no-permission-admin-reset: "§cYou don't have the permission to reset others' nick!"
-no-permission-see: "§cYou don't have the permission to see others' real name!"
+no-permission-help: "§cYou don't have permission to use /nick help!"
+no-permission-set: "§cYou don't have permission to set a nickname!"
+no-permission-admin-set: "§cYou don't have permission to set a nickname on another player!"
+no-permission-reset: "§cYou don't have permission to reset your nickname!"
+no-permission-admin-reset: "§cYou don't have the permission to reset other players nicknames!"
+no-permission-see: "§cYou don't have the permission to see other players real usernames!"
 
 # Various errors
 player-not-online: "§ePlayer is not online!"
 must-specify-player: "§eYou must specify a player!"
-must-specify-nick: "§eYou must specify a nick!"
+must-specify-nick: "§eYou must specify a nickname!"
 no-subcommand: "§eNo subcommands defined. Please run §a/nick help§e for the subcommand list."
 no-run-in-console: "§eAll commands must be used in-game!"
 
@@ -57,9 +59,9 @@ set-by-admin: "§eAn Admin set your Nickname!"
 
 # Reset
 reset: "§aNick successfully resetted!"
-reset-by-admin: "§eAn Admin reset your nick!"
+reset-by-admin: "§eAn Admin reset your Nickname!"
 
 # See
 see: "§a{player_nick}§e's real name is §a{player_name}"
-see-no-nick: "§eThat player has no nick!"
+see-no-nick: "§eThat player has no Nickname!"
 ...
