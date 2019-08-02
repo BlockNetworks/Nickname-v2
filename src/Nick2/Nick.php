@@ -4,7 +4,6 @@ namespace Nick2;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
-
 use pocketmine\Player;
 use pocketmine\utils\Config;
 use pocketmine\event\player\PlayerPreLoginEvent;
