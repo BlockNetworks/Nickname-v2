@@ -8,7 +8,7 @@ api:
 - 3.3.0
 - 4.0.0
 main: Nick2\Nick
-author: ElektroPrinz
+author: ElektroPrinz & Sub-Author is Jes'kad Ad'aryc
 description: Nicks in PocketMine!
 permissions:
   nick.help:
