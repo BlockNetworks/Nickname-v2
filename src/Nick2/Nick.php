@@ -114,7 +114,7 @@ class Nick extends PluginBase implements Listener{
 									$players->sendMessage($this->getConfig()->get("set-by-admin"));
 									$sender->sendMessage($this->getConfig()->get("set"));
 									if($this->getConfig()->get("keep-nick")){
-										$this->nicks->set(strtolower($sender->getName()), $args[1]);
+										$this->nicks->set(strtolower($players->getName()), $args[1]);
 										$this->nicks->save();
 									}
 								}else{
