@@ -111,8 +111,10 @@ class Nick extends PluginBase implements Listener{
 						if($sender->hasPermission("nick.admin.set")){
 							foreach($this->getServer()->getOnlinePlayers() as $players){
 								if(strtolower($players->getName()) == strtolower($args[2])){
+									$pp = $this->getServer()->getPluginManager()->getPlugin("PureChat");
+									$tag = $pp->getNametag($players);
 									$players->setDisplayName($args[1]);
-									$players->setNameTag("§7•§b $args[1] §7•");
+									$players->setNameTag($tag);
 									$players->sendMessage($this->getConfig()->get("set-by-admin"));
 									$sender->sendMessage($this->getConfig()->get("set"));
 									if($this->getConfig()->get("keep-nick")){
@@ -136,8 +138,10 @@ class Nick extends PluginBase implements Listener{
 					// Normal player
 					if(!(isset($args[1]))){
 						if($sender->hasPermission("nick.reset")){
+							$pp = $this->getServer()->getPluginManager()->getPlugin("PureChat");
+							$tag = $pp->getNametag($sender);
 							$sender->setDisplayName($sender->getName());
-							$sender->setNameTag($sender->getName());
+							$sender->setNameTag($tag);
 							$sender->sendMessage($this->getConfig()->get("reset"));
 							if($this->nicks->exists(strtolower($sender->getName()))){
 								$this->nicks->remove(strtolower($sender->getName()));
@@ -153,8 +157,10 @@ class Nick extends PluginBase implements Listener{
 						if($sender->hasPermission("nick.admin.reset")){
 							foreach($this->getServer()->getOnlinePlayers() as $players){
 								if((strtolower($players->getName()) or strtolower($players->getDisplayName())) == strtolower($args[1])){
+									$pp = $this->getServer()->getPluginManager()->getPlugin("PureChat");
+									$tag = $pp->getNametag($players);
 									$players->setDisplayName($players->getName());
-									$players->setNameTag($players->getName());
+									$players->setNameTag($tag);
 									$players->sendMessage($this->getConfig()->get("reset-by-admin"));
 									$sender->sendMessage($this->getConfig()->get("reset-admin"));
 									if($this->nicks->exists(strtolower($players->getName()))){
