@@ -92,8 +92,10 @@ class Nick extends PluginBase implements Listener{
 					// Normal Player
 					if(isset($args[1]) and !(isset($args[2]))){
 						if($sender->hasPermission("nick.set")){
+							$pp = $this->getServer()->getPluginManager()->getPlugin("PurePerms");
+							$tag = $pp->getNametag($sender);
 							$sender->setDisplayName($args[1]);
-							$sender->setNameTag("§7•§b $args[1] §7•");
+							$sender->setNameTag($tag);
 							$sender->sendMessage($this->getConfig()->get("set"));
 							if($this->getConfig()->get("keep-nick")){
 								$this->nicks->set(strtolower($sender->getName()), $args[1]);
