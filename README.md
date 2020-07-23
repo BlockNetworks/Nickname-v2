@@ -1,17 +1,17 @@
 # Nickname
 Allows setting of Nicknames in PocketMine-MP!
 
-### Requirements
+# Requirements
 - PocketMine-MP
 - PureChat
 
-### Usage
+# Usage
 - Download the compiled `.phar` from Poggit
 - Upload it to your servers `plugins` folder
 - Go in-game, and use `/nick set <your nickname here>`
 - For other Commands read below, or use `/nick help`
 
-### Commands
+# Commands
 - `/nick help` | Shows the list of Nickname commands 
 - `/nick set <nickname>` | Sets your nickname 
 - `/nick set <nickname> <player>` | Allows an Admin to set a players nickname
@@ -19,7 +19,7 @@ Allows setting of Nicknames in PocketMine-MP!
 - `/nick reset <player>` | Allows an Admin to reset a players nickname
 - `/nick see <player nick> OR <player name>` | Allows you to see who has a nickname, or what someones nickname is.
 
-### Whats Different
+# Whats Different
 Please note that Kad didn't actually write most of this Plugin, he simply found it, fixed it, and upgraded it. The original creator of it has long since dissapeared, and the 1st editor of it, ElektroPrinz, has deleted his repository of it. The changes listed below are in chronological order of when Kad fixed them.
  
 - Fixed the Namespace {[9272787](https://github.com/KadTheHunter/Nickname/commit/927278741b5dccf4862690ed465aca09a9132f04)}
