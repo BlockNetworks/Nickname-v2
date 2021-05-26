@@ -3,6 +3,9 @@ Allows setting of Nicknames in PocketMine-MP!
 
 This is a continuation of **[KadTheHunger/Nickname](https://github.com/KadTheHunter/Nickname)**.
 
+## Note
+This repository is now located at **[BlockNetworks/Nickname](https://github.com/BlockNetworks/Nickname)**.
+
 ## Requirements
 - **[PocketMine-MP](https://pmmp.io)**
 - **[PureChat](https://poggit.pmmp.io/p/PureChat)**
