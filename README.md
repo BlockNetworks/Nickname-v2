@@ -1,9 +1,7 @@
-# IMPORTANT NOTE
-As of March 15th 2021, this repository and plugin is officially archived and unmaintained. 
-The plugin is still available to download [here](https://github.com/KadTheHunter/Nickname/releases/tag/v3.1.0), and *should* work up until PocketMine-MP 4.0 releases. However, any bugs discovered will not be patched (there shouldn't be any, but just sayin), and I will not be updating this to work with PM4 when that releases. Anyone who wants to update and use this is welcome to do so.
-
 # Nickname
 Allows setting of Nicknames in PocketMine-MP!
+
+This is a continuation of **[KadTheHunger/Nickname](https://github.com/KadTheHunter/Nickname)**.
 
 # Requirements
 - PocketMine-MP
