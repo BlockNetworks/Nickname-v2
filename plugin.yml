@@ -7,19 +7,6 @@ author: ElektroPrinz
 authors: [ElektroPrinz, KadTheHunter]
 description: Nickname plugin for PocketMine-MP
 depend: [PureChat]
-permissions:
-  nick.help:
-    default: true
-  nick.set:
-    default: true
-  nick.reset:
-    default: true
-  nick.see:
-    default: op
-  nick.admin.set:
-    default: op
-  nick.admin.reset:
-    default: op
 commands:
   nick:
     description: Nick main command
